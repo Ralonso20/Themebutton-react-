@@ -1,0 +1,29 @@
+:root {
+    --expo-in: cubic-bezier(0.71, 0, 0.84, 0.36);
+      --expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      html {
+        transition: background-color 0.5s var(--expo-out), color 0.5s var(--expo-out);
+        }
+
+        html.dark {
+          background-color: #333;
+            color: #fff;
+            }
+
+            body {
+              margin: 0;
+                font-family: sans-serif;
+                }
+
+                button {
+                  padding: 10px 20px;
+                    margin: 20px;
+                      cursor: pointer;
+                      }
+
+                      .view-transition {
+                        transition: background-color 1s var(--expo-out), color 1s var(--expo-out);
+                        }
+}
